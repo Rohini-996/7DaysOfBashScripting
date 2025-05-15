@@ -54,7 +54,8 @@ echo $sum  # Output: 15
 
 <<task5
 Using Built-in Variables
-Bash provides several built-in variables that hold useful information. Your task is to create a bash script that utilizes at least three different built-in variables to display relevant information.
+Bash provides several built-in variables that hold useful information. Your task is to create a bash script that utilizes at
+least three different built-in variables to display relevant information.
 task5
 
 #Solution
@@ -70,7 +71,8 @@ echo "3. All arguments passed (\$@): $@"
 
 <<task6
 Task 6: Wildcards
-Wildcards are special characters used to perform pattern matching when working with files. Your task is to create a bash script that utilizes wildcards to list all the files with a specific extension in a directory. complete this task
+Wildcards are special characters used to perform pattern matching when working with files. Your task is to create a bash script
+that utilizes wildcards to list all the files with a specific extension in a directory. complete this task
 task6
 
 #Solution
