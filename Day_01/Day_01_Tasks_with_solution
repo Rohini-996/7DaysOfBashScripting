@@ -1,0 +1,82 @@
+# Today is Day 1 Of My SHELL SCRIPTING Challenge
+  
+<<task1
+Task 1: Comments
+In bash scripts, comments are used to add explanatory notes or disable certain lines of code.
+Your task is to create a bash script with comments explaining what the script does.
+task1
+
+# Solution
+<<help
+Ok, so this shell script takes input as a name and prints your name is
+name given in argument
+help
+
+read -p "Enter name" name
+echo "Your name is $name"
+
+<<Task2
+Echo
+The echo command is used to display messages on the terminal. Your task is to create a bash script
+that uses echo to print a message of your choice.
+Task2
+
+#Solution
+
+echo "Hey my name is rohini"
+
+<<task3
+Variables in bash are used to store data and can be referenced by their name. Your task is to create a bash script
+that declares variables and assigns values to them.
+task3
+
+# Solution:
+
+name=shanaya
+age=18
+rollno=10
+
+echo "MY name is $name"
+echo "MY age is $age"
+echo "MY rollno is $rollno"
+
+<<task4
+Now that you have declared variables, let's use them to perform a simple task. Create a bash script that takes two variables
+(numbers) as input and prints their sum using those variables.
+task4
+
+#Solution
+
+num1=10
+num2=5
+sum=$((num1 + num2))
+echo $sum  # Output: 15
+
+<<task5
+Using Built-in Variables
+Bash provides several built-in variables that hold useful information. Your task is to create a bash script that utilizes at least three different built-in variables to display relevant information.
+task5
+
+#Solution
+
+# 1. $0 - Script name
+echo "1. Script Name (\$0): $0"
+
+# 2. $# - Number of arguments
+echo "2. Number of arguments passed (\$#): $#"
+
+# 3. \$@ - All arguments passed
+echo "3. All arguments passed (\$@): $@"
+
+<<task6
+Task 6: Wildcards
+Wildcards are special characters used to perform pattern matching when working with files. Your task is to create a bash script that utilizes wildcards to list all the files with a specific extension in a directory. complete this task
+task6
+
+#Solution
+
+echo "Enter file extension (e.g., txt, jpg):"
+read ext
+
+echo "Files with .$ext extension:"
+ls *."$ext" 2>/dev/null
